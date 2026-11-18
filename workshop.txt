@@ -1,0 +1,45 @@
+Workshop: Web Development for Data Science
+Natsha Fouchard, Teresa Leclezio, Selma Hov
+
+1.	Find the parts
+“app.py” runs the server-side application and controls the web application’s backend.
+“templates/index.html” defines the web page’s HTML structure.
+“static/style.css” styles the page’s appearance.
+Planets data is defined in app.py.
+
+
+2.	Change the content
+We changed the title to 'Workshop'.
+We added a short paragraph directly below the heading, ‘Discover our workshop’. 
+Both changes appeared.
+ 
+3.	Change the appearance
+We changed the text colour of the header from white to pink, the background colour from light blue to white and the background color of the header from dark blue to dark green.
+We changed the spacing value of the margin of the body from 0 to 10 pixels. Here are the lines of code we changed:
+
+body {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #375379;
+}
+
+header {
+    padding: 3rem 1.5rem;
+    color: #d2b0b1;
+    background-color: #08502D;
+    text-align: center;
+}
+
+4.	Follow a value from Python to HTML
+We ran the code and found the new message in the browser.
+Then we changed the message string in Python to 'Welcome to our workshop website'.
+    Where is the message defined?
+The message is defined in Python, inside app.py, in the render_template() function.
+    Where is it displayed?
+It is displayed in the HTML file templates/index.html, inside the <p> tag. On the web page, it appears at the top before the header. 
+    Does the browser receive the curly-brace expression or the message text?
+The browser receives the message text ("Welcome to our workshop"), not the curly-brace expression ({{ workshop_message }}), because Flask replaces {{ workshop_message }} with the value sent by Python.
+
+5.	Save and explain your work
