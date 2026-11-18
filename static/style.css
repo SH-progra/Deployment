@@ -3,17 +3,17 @@
 }
 
 body {
-    margin: 0;
+    margin: 10px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f1f5f9;
+    background-color: #ffffff;
     color: #375379;
 }
 
 header {
     padding: 3rem 1.5rem;
-    color: #ffffff;
-    background-color: #14253f;
+    color: #b21719;
+    background-color: #08502D;
     text-align: center;
 }
 
